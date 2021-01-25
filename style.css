@@ -1,0 +1,226 @@
+:root {
+    /* Primary */
+    --dark-violet: hsl(256, 26%, 20%);
+    --grayish-blue: hsl(216, 30%, 68%);
+
+    /* Neutral */
+    --very-dark-violet: hsl(270, 9%, 17%);
+    --dark-grayish-violet: hsl(273, 4%, 51%);
+    --very-light-gray: hsl(0, 0%, 98%);
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* General */
+body {
+    font-family: 'Karla', sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'DM Serif Display', serif;
+    font-weight: 400;
+    color: var(--very-dark-violet);
+    line-height: 48px;
+}
+h1 {font-size: 46px;}
+
+p {
+    line-height: 25px;
+    color: var(--dark-grayish-violet);
+}
+
+a {text-decoration: none;}
+
+/* Button */
+.btn {
+    color: var(--very-dark-violet);
+    text-transform: uppercase;
+    border: 2px var(--very-dark-violet) solid;
+    padding: 7px 22px 7px 22px;
+    display: inline-block;
+    letter-spacing: 1px;
+}
+
+/* Small breakline */
+.break-line-small {
+    height: 1px;
+    width: 150px;
+    background-color: var(--grayish-blue);
+}
+
+/* Navbar elements */
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.list {
+    list-style: none;
+    display: flex;
+}
+
+/* Showcase */
+.showcase {
+    background-color: var(--dark-violet);
+    color: var(--very-light-gray);
+}
+
+.showcase h1{    
+    color: var(--very-light-gray);
+}
+
+/* Presentation grid */
+.grid-presentation {
+    margin-top: 50px;
+}
+.item img{
+    margin-bottom: 20px;
+}
+
+/* How we work */
+.how-we-work {
+    background: var(--dark-violet);
+    color: var(--very-light-gray);
+    padding-top: 66px;
+    padding-bottom: 66px;
+}
+.how-we-work h2{    
+    color: var(--very-light-gray);
+    line-height: 40px;
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+.how-we-work .btn {
+    color: var(--very-light-gray);
+    border: 2px var(--very-light-gray) solid;
+}
+
+
+/* Mobile */
+@media (max-width: 540px) {
+    /* Hide desktop elements */
+    .desktop {
+        display: none;
+    }
+    /* Container for mobile*/
+    .container {
+        max-width: 88%;
+        margin: auto;
+    }
+    /* Bakcground image */
+    .image-bg{
+        height: 440px;
+        width: auto;
+        background: url("./img/image-intro-mobile.jpg") no-repeat center center/cover;
+    }
+    /* Showcase */
+    .showcase {
+        position: relative;
+        padding-top: 90px;
+        padding-bottom: 90px;
+    }
+    /* Pattern bg left */
+    .pattern-mobile-left {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 0;
+        opacity: 0.9999;
+    }
+    /* Showcase header */
+    .showcase h1 {
+        z-index: 2;
+        text-align: center;
+        opacity: 0.9999;
+    }
+    /* Showcase content */
+    .showcase p {
+        text-align: center;
+        padding-top: 15px;
+    }
+    /* Pattern bg right */
+    .pattern-mobile-right {
+        position: absolute;
+        right: 0;
+        top: 350px;
+        opacity: 0.9999;
+    }
+    /* Showcase content */
+    .showcase-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    /* Showcase button */
+    .showcase .btn {
+        color: var(--very-light-gray);
+        border: 2px var(--very-light-gray) solid;
+        display: inline-block;
+        margin: 35px auto 0 auto;
+    }
+
+    /* Presentation */
+    .presentation {
+        margin: 100px 0 170px 0;
+        padding-top: 35px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 140px;
+    }
+
+    /* Break line */
+    .break-line-small {
+        margin: 0 auto 35px auto;
+    }
+
+    /* Presentation grid */
+    .grid-presentation {
+        padding-top: 30px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    /* Presentation grid items */
+    .item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 65px;
+    }
+    .item:first-child {
+        padding-top: 0;
+    }
+    .item p {
+        text-align: center;
+    }
+
+    /* How we work */ 
+    .how-we-work {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .how-we-work h2 {
+        text-align: center;
+        opacity: 0.9999;
+    }
+    /* How we work bg pattern */
+    .bg-pattern-how-we-work {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 0;
+        opacity: 0.9999;
+    }
+
+    /* Footer */
+}
