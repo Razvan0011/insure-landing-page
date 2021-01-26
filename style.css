@@ -61,6 +61,10 @@ a {text-decoration: none;}
     color: var(--grayish-blue);
     text-transform: uppercase;
 }
+/* List link hover state */
+.list li a:hover {
+    color: var(--very-dark-violet);
+}
 .list .btn {
     color: var(--very-dark-violet);
 }
@@ -72,6 +76,19 @@ a {text-decoration: none;}
     padding: 7px 22px 7px 22px;
     display: inline-block;
     letter-spacing: 1px;
+}
+/* Button navbar active state */
+.navbar .btn:hover {
+    background-color: var(--very-dark-violet);
+    color: var(--very-light-gray);
+}
+.showcase .btn:hover {
+    background-color: var(--very-light-gray);
+    color: var(--dark-violet);
+}
+.how-we-work .btn:hover {
+    background-color: var(--very-light-gray);
+    color: var(--dark-violet);
 }
 
 /* Showcase */
@@ -275,9 +292,14 @@ footer {
         margin-right: 7px;
     }
 
+    /* Social media logoes hover state */
+    footer .list li a:hover {
+        filter: brightness(30%);
+    }
+
     /* Social link list */
     footer .grid-footer {
-        margin-bottom: 45px;
+        padding-bottom: 45px;
         display: flex;
         /* grid-template-columns: repeat(4, 1fr); */
         justify-content: space-between;
@@ -307,12 +329,27 @@ footer {
         letter-spacing: 1px;
         margin-bottom: 15px;
     }
-    .item-footer ul li:first-child{
+
+    .item-footer .list-head {
         color: var(--grayish-blue);
+        pointer-events: none;
+    }
+    .item-footer .list-head:hover {
+        border-bottom: none;
+        cursor: initial;
+    }
+
+    .item-footer ul li a{
+        color: var(--very-dark-violet);
     }
     .item-footer ul li:nth-child(2){
         visibility: hidden;
         margin-bottom: 0;
+    }
+    /* List item hover state */
+    .item-footer ul li a:hover {
+        border-bottom: 1px var(--very-dark-violet) solid;
+        cursor: pointer;
     }
 
 
@@ -480,6 +517,10 @@ footer {
         justify-content: center;
         align-items: center;
     }
+    .item-footer .list-head {
+        color: var(--grayish-blue);
+        pointer-events: none;
+    }
     .item-footer ul{
         list-style: none;
         margin-top: 20px;
@@ -496,6 +537,10 @@ footer {
         font-size: 14px;
         letter-spacing: 1px;
         margin-bottom: 15px;
+    }
+
+    .item-footer ul li a{
+        color: var(--very-dark-violet);
     }
     .item-footer ul li:first-child{
         color: var(--grayish-blue);
