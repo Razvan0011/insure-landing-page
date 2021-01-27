@@ -12,9 +12,12 @@
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Insure</title>
+    <link rel="shortcut icon" href="./img/favicon-32x32.png" type="image/x-icon">
 </head>
 
 <body>
+
+
     <!-- Navbar -->
     <nav class="navbar" id="nav-top">
         <div class="container">
@@ -23,6 +26,7 @@
             </div>
             <div class="hamburger mobile">
                 <img src="./img/icon-hamburger.svg" alt="">
+                <img src="./img/icon-close.svg" alt="" class="hide">
             </div>
             <ul class="list desktop">
                 <li><a href="#">how we work</a></li>
@@ -32,6 +36,18 @@
             </ul>
         </div>
     </nav>
+    <!-- dark overlay menu -->
+    <div class="mobile-nav mobile hide">
+        <div class="container">
+            <ul>
+                <li><a href="#">how we work</a></li>
+                <li><a href="#">blog</a></li>
+                <li><a href="#">account</a></li>
+                <li><a href="#" class="btn">view plans</a></li>
+            </ul>
+
+        </div>
+    </div>
     <div class="image-bg mobile">
         <!-- <img src="./img/image-intro-mobile.jpg" alt="" class="mobile"> -->
     </div>
@@ -66,7 +82,8 @@
                 <div class="item">
                     <img src="./img/icon-snappy-process.svg" alt="">
                     <h2>Snappy Process</h2>
-                    <p>Lorem ipsum dolor sit, amet adipisicing elitas modi molestias quis. Deserunt veritatis amet sit
+                    <p>Lorem ipsum dolor sit, amet adipisicing elitas modi molestias quis. Deserunt veritatis amet
+                        sit
                         ipsum.
                     </p>
                 </div>
@@ -166,6 +183,10 @@
         </div>
 
     </footer>
+
+
+    <script src="main.js"></script>
 </body>
+
 
 </html>
