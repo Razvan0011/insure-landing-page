@@ -155,6 +155,7 @@ footer {
     position: sticky;
 }
 
+/* Mobile nav bar */
 .mobile-nav {
     position: sticky;
     top: 0;
